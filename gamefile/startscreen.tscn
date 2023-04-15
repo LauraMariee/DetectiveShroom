@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://prefabs/chars/detective_shroom.tscn" type="PackedScene" id=1]
+[ext_resource path="res://prefabs/rooms/trophy_room.tscn" type="PackedScene" id=2]
+[ext_resource path="res://main.tres" type="Theme" id=3]
+[ext_resource path="res://MainMenu.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 961, 540 )
+current = true
+
+[node name="TrophyRoom" parent="." instance=ExtResource( 2 )]
+
+[node name="Detective" parent="." instance=ExtResource( 1 )]
+position = Vector2( -392, 213 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="StartButton" type="Button" parent="Control"]
+margin_left = 828.0
+margin_top = 913.0
+margin_right = 1238.0
+margin_bottom = 1041.0
+theme = ExtResource( 3 )
+text = "Start"
+
+[node name="TitleLabel" type="Label" parent="Control"]
+margin_left = 18.0
+margin_top = 112.0
+margin_right = 1287.0
+margin_bottom = 670.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 3 )
+text = "Detective Shroom
+
+"
+
+[node name="TitleLabel" type="Label" parent="Control/TitleLabel"]
+margin_left = 762.0
+margin_top = 446.0
+margin_right = 2253.0
+margin_bottom = 1004.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 3 )
+text = "Mush-room for justice"
+
+[node name="ExitButton" type="Button" parent="Control"]
+margin_left = 1353.0
+margin_top = 907.0
+margin_right = 1763.0
+margin_bottom = 1035.0
+theme = ExtResource( 3 )
+text = "Exit"

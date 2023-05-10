@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mushroom2.svg-81d05148cdb976e2abebd806f7f5b7de.stex"
+path="res://.import/mushroom_idle_4.png-f83bd0e5ba362fad1c2c831fb2fceab5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gamefile/base_files/mushroom2.svg"
-dest_files=[ "res://.import/mushroom2.svg-81d05148cdb976e2abebd806f7f5b7de.stex" ]
+source_file="res://gamefile/base_files/mushroom_idle_frames/mushroom_idle_4.png"
+dest_files=[ "res://.import/mushroom_idle_4.png-f83bd0e5ba362fad1c2c831fb2fceab5.stex" ]
 
 [params]
 

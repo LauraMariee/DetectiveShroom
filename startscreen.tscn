@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://prefabs/chars/detective_shroom.tscn" type="PackedScene" id=1]
-[ext_resource path="res://prefabs/rooms/trophy_room.tscn" type="PackedScene" id=2]
+[ext_resource path="res://root_scenes/trophy_room.tscn" type="PackedScene" id=2]
 [ext_resource path="res://main.tres" type="Theme" id=3]
 [ext_resource path="res://MainMenu.gd" type="Script" id=4]
 
@@ -11,10 +11,12 @@
 position = Vector2( 961, 540 )
 current = true
 
-[node name="TrophyRoom" parent="." instance=ExtResource( 2 )]
-
 [node name="Detective" parent="." instance=ExtResource( 1 )]
-position = Vector2( -392, 213 )
+position = Vector2( -120, 38 )
+rotation = 0.286234
+
+[node name="TrophyRoom" parent="." instance=ExtResource( 2 )]
+position = Vector2( 27, 11 )
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
